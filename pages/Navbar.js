@@ -33,7 +33,7 @@ function Navbar() {
  
  return (
   <>
-   <div className="flex cursor-pointer flex-col md:flex-row h-20 md:h-16 py-3 justify-between md:justify-start text-white" style={{background:"rgb(69,129,255)"}}>
+   <div className="flex my-0 mt-0 fixed z-0 top-0 left-0 right-0 w-full cursor-pointer flex-col md:flex-row h-20 md:h-16 py-3 justify-between md:justify-start text-white" style={{background:"rgb(69,129,255)"}}>
      <Link href="/"><h1 className={styles.brand}>Health care pharmacy</h1></Link>
     <div className="flex space-y-2 justify-center">
      <ul className="flex items-center space-x-4 mx-3">
@@ -44,6 +44,7 @@ function Navbar() {
      </ul>
     </div><br />
    </div>
+   <br /><br />
   </>
  )
 }

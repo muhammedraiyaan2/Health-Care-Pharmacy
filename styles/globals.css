@@ -2,6 +2,7 @@
 @tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oleo+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 .navbar{
     @apply bg-gradient-to-r from-blue-400 to-green-400 py-3 flex;
 }
@@ -45,5 +46,11 @@
 }
 .contact-form{
     @apply text-center text-4xl;
-    font-family: 'Hubballi', cursive;
+    /* font-family: 'Hubballi', cursive; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.address{
+    /* font-family: 'Koulen', cursive; */
+    /* font-family: 'Cabin', sans-serif; */
+    font-family: monospace;
 }
