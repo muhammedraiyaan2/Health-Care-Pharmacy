@@ -1,7 +1,14 @@
 {
+  "/Footer": "pages/Footer.html",
+  "/Navbar": "pages/Navbar.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/contact": "pages/contact.html",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/order": "pages/order.html",
   "/_error": "pages/_error.js",
-  "/login": "pages/login.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }

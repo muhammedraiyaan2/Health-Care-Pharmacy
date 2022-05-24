@@ -31,7 +31,7 @@ export default function Home() {
   }}/></h1>
    <button className="flex p-2 text-xs rounded-lg mx-auto bg-gradient-to-r font-sans italic bg-green-500 text-white font-bold sm:text-sm md:text-sm lg:text-lg xl:text-lg"><Link href="/order">Order now</Link></button>
 <br></br>
-<img src={"https:/muhammedraiyaan2.github.io/Server/banner.jpg"} alt="banner" />
+<img src={"https://muhammedraiyaan2.github.io/Server/banner.jpg"} alt="banner" />
 <h1 className={"my-3 text-center text-sm md:text-xl address italic text-red-600 "}>Address: No.I86/IA, Madhina Nagar, Konavattam, Vellore - 632013</h1>
    {/* <Image
    src={banner2}
