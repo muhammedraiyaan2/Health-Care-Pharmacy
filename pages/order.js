@@ -1,7 +1,16 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 function order() {
+  const [order, setOrder] = useState(`Free Home Delivery`)  
+  useEffect(()=>{
+    if(sessionStorage.getItem("id")!=null){
+      setOrder(`Your order id: ${sessionStorage.getItem("id")}`)
+    }
+    else{
+      setOrder(`Free Home Delivery`)
+    }
+  })
   return (
     <><br />
     <ToastContainer
@@ -25,7 +34,7 @@ pauseOnHover
             />
             <h2 className="mt-6 text-center text-2xl md:text-3xl font-extrabold text-gray-900">Order your medicine</h2>
             <p className="mt-2 text-center text-sm text-indigo-600 font-bold text-base">
-              Free Home Delivery
+              {order}
             </p>
           </div>
           <form className="mt-8 space-y-6">
@@ -120,6 +129,7 @@ pauseOnHover
       Time: `${time.getHours()}:${time.getMinutes()}`,
       OrderId: id
     }
+    sessionStorage.setItem('id',id)
     await fetch(process.env.NEXT_PUBLIC_DB+"Orders.json",
       {
         method: "POST",

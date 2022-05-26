@@ -20,7 +20,7 @@ export default function Home() {
   nam=localStorage.getItem(`Name`)
   </Script>
   <br />
-    <h1 class="my-3 text-center text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl oleo text-lime-500">
+    <h1 class="my-3 text-center text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl oleo">
 <Typewriter
   options={{
     strings: [ `Welcome ${d()} to Health Care Pharmacy`,`Order now on Health Care Pharmacy with 10% discount`,`More Than Just Medicine`],
@@ -29,7 +29,7 @@ export default function Home() {
     delay:40,
     loop: true,
   }}/></h1>
-   <button className="flex p-2 text-xs rounded-lg mx-auto bg-gradient-to-r font-sans italic bg-green-500 text-white font-bold sm:text-sm md:text-sm lg:text-lg xl:text-lg"><Link href="/order">Order now</Link></button>
+   <button style={{background:`#02b50e`}} className="flex p-2 text-xs rounded-lg mx-auto bg-gradient-to-r font-sans italic text-white font-bold sm:text-sm md:text-sm lg:text-lg xl:text-lg"><Link href="/order">Order now</Link></button>
 <br></br>
 <img src={"https://muhammedraiyaan2.github.io/Server/banner.jpg"} alt="banner" />
 <h1 className={"my-3 text-center text-sm md:text-xl address italic text-red-600 "}>Address: No.I86/IA, Madhina Nagar, Konavattam, Vellore - 632013</h1>
